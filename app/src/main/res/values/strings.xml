@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Veggies Demo</string>
+    <string name="house_flat_no_street_building"><![CDATA[House / Flat no. & Street/Building]]></string>
+    <string name="area_city"><![CDATA[Area & City]]></string>
+    <string name="see_all"><u>See All</u></string>
+</resources>

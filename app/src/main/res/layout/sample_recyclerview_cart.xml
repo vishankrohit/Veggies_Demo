@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:elevation="20dp"
+    android:layout_marginBottom="4dp"
+    android:layout_height="80dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cart_bg">
+
+            <RelativeLayout
+                android:id="@+id/ImageLayoutCart"
+                android:layout_width="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="80dp"
+                android:background="@drawable/cart_img_holder_bg">
+                <ImageView
+                    android:id="@+id/imgProductCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ImageLayoutCart"
+                android:layout_marginLeft="12dp">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text="Apples"
+                    android:fontFamily="@font/saira_condensed_medium"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvName"
+                    android:textSize="16sp"
+                    android:layout_marginTop="-4dp"
+                    android:text="₹90 / 500 gms"
+                    android:fontFamily="@font/saira_condensed_medium"
+                    android:textColor="@color/font_color"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp">
+                <RelativeLayout
+                    android:id="@+id/RemoveLayout"
+                    android:layout_width="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp"
+                    android:background="@drawable/minus_btn_bg">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_remove"
+                        android:layout_centerInParent="true"
+                        app:tint="@color/blue_primary"/>
+                    <Button
+                        android:id="@+id/btnRemove"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/RemoveLayout"
+                    android:text="2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/saira_condensed_medium"
+                    android:textSize="22sp"/>
+                <RelativeLayout
+                    android:id="@+id/AddLayout"
+                    android:layout_width="25dp"
+                    android:layout_toRightOf="@+id/tvQuantity"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle_btn_bg">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_add"
+                        android:layout_centerInParent="true"
+                        app:tint="@color/white"/>
+                    <Button
+                        android:id="@+id/btnAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

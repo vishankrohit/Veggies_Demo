@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".OrderConfirmationActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/TitileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/blue_primary">
+
+                <ImageView
+                    android:id="@+id/icBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/saira_semibold"
+                    android:text="Confirmation"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ConfirmationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TitileLayout">
+
+                <RelativeLayout
+                    android:id="@+id/icDone"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/circle_btn_bg">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_done"
+                        app:tint="@color/black"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/textSuccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/icDone"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="#121212"
+                    android:fontFamily="@font/saira_semibold"
+                    android:text="Order Placed Successfully!"
+                    android:layout_marginTop="12dp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textSuccess"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/textTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/saira_medium"
+                        android:text="Total: "
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/textTotal"
+                        android:fontFamily="@font/saira_semibold"
+                        android:text="₹ 370"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/blue_primary"
+                        android:textSize="28sp" />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/NoteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_btn_bg"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/ConfirmationLayout">
+
+                <TextView
+                    android:id="@+id/textShipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textColor="#121212"
+                    android:fontFamily="@font/saira_semibold"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Note: Your order will be delivered in 1-2 days."/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NoteLayout"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="24dp"
+                android:text="Delivery Address:"
+                android:fontFamily="@font/saira_semibold"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/userDetailLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAddress"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kartik"
+                    android:fontFamily="@font/saira_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUserName"
+                    android:maxWidth="280dp"
+                    android:fontFamily="@font/saira_medium"
+                    android:text="C - 201, XYZ Society, ABC Street, Area PQR, Delhi, 201608 "
+                    android:textColor="@color/font_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAddress"
+                    android:text="+91-9876543210"
+                    android:fontFamily="@font/saira_medium"
+                    android:textColor="@color/font_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textPaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userDetailLayout"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="16dp"
+                android:text="Payment Method:"
+                android:fontFamily="@font/saira_semibold"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPaymentMethod"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/saira_medium"
+                android:text="Cash On Delivery"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textCartPrivew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPaymentMethod"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="16dp"
+                android:text="Cart:"
+                android:fontFamily="@font/saira_semibold"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textCartPrivew"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="120dp"
+                tools:listitem="@layout/sample_final_cart_layout" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

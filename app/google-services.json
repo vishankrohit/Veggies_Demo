@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "190605632289",
+    "project_id": "grocery-app-f86ee",
+    "storage_bucket": "grocery-app-f86ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190605632289:android:55e59f230626943b669460",
+        "android_client_info": {
+          "package_name": "com.livcorp.veggiesdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190605632289-3qtg9q3jc42jle9sfiudeh0meo36v7vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.livcorp.veggiesdemo",
+            "certificate_hash": "adf5999676b548f7d12500ba241926eeb8fa3e8e"
+          }
+        },
+        {
+          "client_id": "190605632289-3r0pikuo1q50l34kgli863at2org2sc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-DOgGlX4pYUZj5HBXb76jwar9HNzsYc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190605632289-3r0pikuo1q50l34kgli863at2org2sc5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
