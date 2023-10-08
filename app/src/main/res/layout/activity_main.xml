@@ -80,7 +80,8 @@
         android:layout_height="190dp"
         android:layout_below="@+id/textFruitsLayout"
         android:layout_marginTop="12dp"
-        tools:listitem="@layout/sample_recylclerview_cards" />
+        tools:listitem="@layout/sample_recylclerview_cards"
+        android:orientation="horizontal"/>
 
     <RelativeLayout
         android:id="@+id/textVegetablesLayout"
